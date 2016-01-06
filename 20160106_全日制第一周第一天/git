@@ -10,7 +10,7 @@ svn / git
 3、让本地的仓库和远程的仓库保持连接
    $ git remote add 名字(一般叫做origin) 远程仓库的地址   例如: $ git remote add origin https://github.com/zhouxiaotian/test.git
 
-   扩展：$ git remote -v  查看当前本地都和哪些仓库保持了连接
+   扩展	$ git remote -v  查看当前本地都和哪些仓库保持了连接
         $ git remote rm 名字  把名字对应的仓库和本地取消连接
         $ git remote update 名字  把名字对应的远程仓库和本地仓库的连接通道进行更新,更新完成后我们就可以随时获取最新的项目源码了(在后期更新老师讲义的时候我们会操作演示)
 
