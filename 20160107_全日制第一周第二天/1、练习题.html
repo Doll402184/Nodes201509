@@ -16,6 +16,20 @@
     var res = fn(ary);
     console.log(ary);
     console.log(res);
+
+    number : 4,
+    fn1 : ( function() {         
+        this.number *= 2;
+        number=number*2;
+        var number=3;
+        return function() {
+            this.number *= 2;
+            number*=3;
+            alert(number);
+        }
+    } )(),
+    db2:function(){this.number*=2}
+    
 </script>
 </body>
 </html>

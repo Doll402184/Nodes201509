@@ -60,6 +60,16 @@
         fn();//this->window
     };
     //学好this记住这句话:你以为 你以为的 就是你以为的
+
+    console.log(a);
+    var a=function(){
+        window.setTimeout(function(){
+
+            console.log(this)
+        },1000)
+    }
+    a()
+
 </script>
 </body>
 </html>
