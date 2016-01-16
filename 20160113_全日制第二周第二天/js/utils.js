@@ -3,15 +3,14 @@
  */
 var utils = {
     //listToArray:把类数组转换为数组(兼容所有的浏览器)
-    listToArray: function (likeAry) {
-        var ary = [];
-        try {
-            ary = Array.prototype.slice.call(likeAry, 0);
-        } catch (e) {
-            for (var i = 0; i < likeAry.length; i++) {
-                ary[ary.length] = likeAry[i];
+    listToArray: function (obj) {
+            var out = [],i = 0,len = obj.length;
+            for (; i < len; i++) {
+                if (obj[i] instanceof Object){
+                    out[i] = deepcopy(obj[i]);
+                }
+                else out[i] = obj[i];
             }
+            return out;
         }
-        return ary;
-    }
 };
