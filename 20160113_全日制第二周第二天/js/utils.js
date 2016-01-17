@@ -1,16 +1,7 @@
 /*
- * utils.js 存储的是我们项目中常用的公共的方法
+ * utils.js 麓忙麓垄碌脛脢脟脦脪脙脟脧卯脛驴脰脨鲁拢脫脙碌脛鹿芦鹿虏碌脛路陆路篓
  */
 var utils = {
-    //listToArray:把类数组转换为数组(兼容所有的浏览器)
-    listToArray: function (obj) {
-            var out = [],i = 0,len = obj.length;
-            for (; i < len; i++) {
-                if (obj[i] instanceof Object){
-                    out[i] = deepcopy(obj[i]);
-                }
-                else out[i] = obj[i];
-            }
-            return out;
-        }
+    //listToArray:掳脩脌脿脢媒脳茅脳陋禄禄脦陋脢媒脳茅(录忙脠脻脣霉脫脨碌脛盲炉脌脌脝梅)
+   
 };
